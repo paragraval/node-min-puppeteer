@@ -1,0 +1,14 @@
+{
+  "name": "node-min-puppeteer",
+  "version": "1.0.0",
+  "description": "The minimum Node.js environment with puppeteer for UI testing.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paragraval/node-min-puppeteer"
+  },
+  "author": "Parag Raval",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "puppeteer": "^1.19.0"
+  }
+}

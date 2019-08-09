@@ -1,0 +1,8 @@
+services:
+  - docker
+
+deploy:
+  provider: script
+  script: bash travis-scripts/docker_build_push.sh
+  on:
+    branch: master
