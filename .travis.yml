@@ -1,6 +1,9 @@
 services:
   - docker
 
+script:
+  - echo "Not implemented"
+
 deploy:
   provider: script
   script: bash travis-scripts/docker_build_push.sh
