@@ -18,15 +18,15 @@ FROM node:10-alpine
 
 # Installs latest Chromium (73) package.
 RUN apk update && apk upgrade && \
-    echo @edge http://nl.alpinelinux.org/alpine/edge/community >> /etc/apk/repositories && \
-    echo @edge http://nl.alpinelinux.org/alpine/edge/main >> /etc/apk/repositories && \
+    echo @3.10 http://nl.alpinelinux.org/alpine/v3.10/community >> /etc/apk/repositories && \
+    echo @3.10 http://nl.alpinelinux.org/alpine/v3.10/main >> /etc/apk/repositories && \
     apk add --no-cache \
-      chromium@edge=~73.0.3683.103 \
-      nss@edge \
-      freetype@edge \
-      freetype-dev@edge \
-      harfbuzz@edge \
-      ttf-freefont@edge
+    chromium@3.10=~73.0.3683.103 \
+    nss@3.10 \
+    freetype@3.10 \
+    freetype-dev@3.10 \
+    harfbuzz@3.10 \
+    ttf-freefont@3.10
 
 # This line is to tell karma-chrome-launcher where
 # chromium was downloaded and installed to.
